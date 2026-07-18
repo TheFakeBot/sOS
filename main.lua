@@ -1,6 +1,7 @@
 function input(text)
-    print(text)
+    term.write(text)
     read()
+    term.write("\n")
 end
 
 function update(link,filename)
@@ -13,5 +14,11 @@ end
 
 while true do
     i = input(">")
-    shell.run("i")
+    if i = "update" then 
+        x = split(i,"update ")
+        link, filename = split(x, " ")
+        update(link, filename)
+    else
+        shell.run("i")
+    end
 end
