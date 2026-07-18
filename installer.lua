@@ -2,7 +2,7 @@ function download(link,filename)
     f = fs.open(filename, "w+")
     dat = http.get(link)
     sleep(1)
-    f.write(dat)
+    f.write(dat.readAll())
     f.close()
 end
 
