@@ -14,7 +14,7 @@ print("Downloading startup.lua ...")
 download("https://github.com/TheFakeBot/sOS/raw/refs/heads/main/startup.lua", "startup.lua")
 i=5
 while i ~= -1 do
-    clear()
+    term.clear()
     print("Install complete! Restarting in " + i)
     i=i-1
     sleep(1)
