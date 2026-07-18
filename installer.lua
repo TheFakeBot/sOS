@@ -13,9 +13,11 @@ download("https://github.com/TheFakeBot/sOS/raw/refs/heads/main/bootstrap.lua", 
 print("Downloading startup.lua ...")
 download("https://github.com/TheFakeBot/sOS/raw/refs/heads/main/startup.lua", "startup.lua")
 i=5
+term.clear()
 while i ~= -1 do
-    term.clear()
-    print("Install complete! Restarting in " + i)
+    print("Install complete! Restarting in ")
+    term.setCursorPos(34,1)
+    term.write(i)
     i=i-1
     sleep(1)
 end
