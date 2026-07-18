@@ -14,7 +14,7 @@ end
 
 while true do
     i = input(">")
-    if i = "update" then 
+    if i == "update" then 
         x = split(i,"update ")
         link, filename = split(x, " ")
         update(link, filename)
