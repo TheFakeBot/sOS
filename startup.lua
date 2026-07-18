@@ -1,1 +1,1 @@
-shell("bootstrap.lua")
+shell.run("bootstrap.lua")
