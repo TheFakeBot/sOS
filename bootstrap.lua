@@ -10,3 +10,5 @@ function update(link,filename)
     f.write(dat)
     f.close()
 end
+
+shell.run("main.lua")
