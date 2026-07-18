@@ -1,4 +1,4 @@
 while true do
     i = input(">")
-    shell("i")
+    shell.run("i")
 end
